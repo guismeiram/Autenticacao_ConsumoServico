@@ -2,4 +2,4 @@
 
 Teste backend spring boot
 
-Oteste visa autenticação e consumo de serviços. 
+O teste visa autenticação e consumo de serviços de criptomoedas.
