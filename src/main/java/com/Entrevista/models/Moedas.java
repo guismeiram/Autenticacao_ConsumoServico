@@ -16,6 +16,8 @@ public class Moedas {
     public boolean is_active;
     public String type;
 
+
+
     public Favoritas getFavoritas() {
         return favoritas;
     }
@@ -26,10 +28,6 @@ public class Moedas {
 
     @ManyToOne
     private Favoritas favoritas;
-
-
-
-
     public String getId() {
         return id;
     }

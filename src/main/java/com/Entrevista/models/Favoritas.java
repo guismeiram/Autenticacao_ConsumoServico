@@ -9,23 +9,12 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity(name = "favoritos")
+@Entity
 public class Favoritas {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    public List<Moedas> getMoedas() {
-        return moedas;
-    }
-
-    public void setMoedas(List<Moedas> moedas) {
-        this.moedas = moedas;
-    }
-
-    @OneToMany(cascade = {CascadeType.ALL}, mappedBy = "favoritas")
-    @LazyCollection(LazyCollectionOption.FALSE)
-    private List<Moedas> moedas = new ArrayList<>();//ou coinId: símbolo da moeda (ex: BTC, ETH, XNO) ou id da API
 
     private LocalDate created = LocalDate.now();
     private LocalTime updated = LocalTime.now(); //data de atualização do favorito
@@ -42,6 +31,17 @@ public class Favoritas {
         this.id = id;
     }
 
+    public List<Moedas> getMoedas() {
+        return moedas;
+    }
+
+    public void setMoedas(List<Moedas> moedas) {
+        this.moedas = moedas;
+    }
+
+    @OneToMany(cascade = {CascadeType.ALL}, mappedBy = "favoritas")
+    @LazyCollection(LazyCollectionOption.FALSE)
+    private List<Moedas> moedas = new ArrayList<>();//ou coinId: símbolo da moeda (ex: BTC, ETH, XNO) ou id da API
 
 
 

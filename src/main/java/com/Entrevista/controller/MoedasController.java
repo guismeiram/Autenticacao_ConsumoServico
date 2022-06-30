@@ -37,5 +37,11 @@ public class MoedasController {
         return favoritosRepository.save(favoritos);
     }
 
+       @GetMapping("rankMoedas")
+        public List<Moedas> getALlTopMoedas(int rank) {
+            return moedasRepository.findTopRankMoedas(rank);
+        }
+
+
 
 }
