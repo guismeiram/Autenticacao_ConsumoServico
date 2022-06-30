@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public interface MoedasRepository extends JpaRepository<Moedas, String> {
 
-    @Query(value = "SELECT * FROM moedas m ORDER BY m.rank WHERE m.rank < :rank",
+    @Query(value = "SELECT TOP 50 * FROM moedas m ORDER BY m.rank WHERE m.rank < :rank",
             nativeQuery = true)
     List<Moedas> findTopRankMoedas(int rank);
 }
