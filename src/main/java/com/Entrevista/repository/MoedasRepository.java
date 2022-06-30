@@ -8,9 +8,9 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface MoedasRepository extends JpaRepository<Moedas, String> {
+public interface MoedasRepository extends JpaRepository<Moedas, Long> {
 
-    @Query(value = "SELECT TOP 50 * FROM moedas m ORDER BY m.rank WHERE m.rank < :rank",
+    @Query(value = "SELECT * FROM moedas m  WHERE m.rank < :rank  ORDER BY m.rank ASC Limit 50",
             nativeQuery = true)
-    List<Moedas> findTopRankMoedas(int rank);
+    List<Moedas> findTopRankMoedas(Long rank);
 }

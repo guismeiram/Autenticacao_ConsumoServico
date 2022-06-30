@@ -6,6 +6,7 @@ import com.Entrevista.repository.FavoritosRepository;
 import com.Entrevista.repository.MoedasRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -38,7 +39,7 @@ public class MoedasController {
     }
 
        @GetMapping("rankMoedas")
-        public List<Moedas> getALlTopMoedas(int rank) {
+        public List<Moedas> getALlTopMoedas(@RequestParam(value = "rank", required = false) Long rank) {
             return moedasRepository.findTopRankMoedas(rank);
         }
 

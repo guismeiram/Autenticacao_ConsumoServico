@@ -11,7 +11,7 @@ public class Moedas {
     public String id;
     public String name;
     public String symbol;
-    public int rank;
+    public Long rank;
     public boolean is_new;
     public boolean is_active;
     public String type;
@@ -52,11 +52,11 @@ public class Moedas {
         this.symbol = symbol;
     }
 
-    public int getRank() {
+    public Long getRank() {
         return rank;
     }
 
-    public void setRank(int rank) {
+    public void setRank(Long rank) {
         this.rank = rank;
     }
 
