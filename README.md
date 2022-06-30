@@ -4,9 +4,9 @@ Teste backend spring boot
 
 O teste visa autenticação e consumo de serviços de criptomoedas.
 
-Ferramentas utilizadas:
-Java 17
-IDE Eclipse - SPRING BOOT -Java
+<center><b>Ferramentas utilizadas:</b></center><br> 
+Java 17<br> 
+IDE Eclipse - SPRING BOOT -Java<br> 
 
-Como baixar o projeto?
+<b>Como baixar o projeto?</b><br>
 git clone https://github.com/guismeiram/Autenticacao_ConsumoServico
