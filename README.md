@@ -12,7 +12,7 @@ IDE Eclipse - SPRING BOOT -Java<br><br><br>
 git clone https://github.com/guismeiram/Autenticacao_ConsumoServico
 
 <center><b>Como foi feito:</b></center><br> 
-JPQL
+JPQL<br>
 JPA
 
 
