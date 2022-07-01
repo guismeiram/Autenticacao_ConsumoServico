@@ -20,6 +20,6 @@ JPA<br>
 TOKEN<br>
 AUTHETICAÇÃO<br>
 CADASTRO USER<br>
-CONSUMO DE SERVIÇO GET(RestTemplate<br>
+CONSUMO DE SERVIÇO GET(RestTemplate)<br>
 
 
